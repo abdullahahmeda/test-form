@@ -204,7 +204,7 @@ form {
   padding: 1%;
   margin-top: 10vh;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   align-items: center;
   justify-content: space-between;
@@ -397,7 +397,7 @@ form {
 
   .box {
     width: 100%;
-    font-size: 15px;
+    font-size: 16px;
     padding: 6%;
   }
 }
