@@ -69,7 +69,6 @@ rating_data.forEach((element, i) => {
 
   if (element['q' + current_num] === 'Excellent') {
     excellent_rate_count += 1
-    console.log(level)
     levelsRatings[level].excellent++
   }
 })
@@ -99,8 +98,6 @@ function calculateFeedbackPerLevelPercentage () {
     )
   })
 }
-
-console.log(calculateFeedbackPerLevelPercentage())
 
 let level1_ans_count = 0
 let level2_ans_count = 0
