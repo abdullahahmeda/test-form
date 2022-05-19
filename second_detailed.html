@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>First Reading Text (Concise Feedback)</title>
+</head>
+<body>
+
+    
+    <style>
+        .box{
+            width: 70vw;
+            padding: 2%;
+        }
+
+        .x_mark{
+            top: 5%;
+        }
+
+        @media only screen and (max-width: 1000px) {
+
+
+
+    .box{
+        width: 100%;
+        font-size: 15px;
+        padding: 5%;
+        padding-top: 10%;
+        
+    }
+  
+}
+
+
+    </style>
+
+
+    <div class="body">
+        <div class="cont">
+            <h3 class="blue">Read the following text, then choose the correct answers:</h3>
+            <center>
+                <img src="imgs/talking.jpg" alt="talking img">
+            </center>
+            
+            <p><span class="bold ">Faisal</span>:  Would you like me to order something else for you?</p>
+            
+            <p><span class="bold blue">Ibrahim</span>:  No thanks. I like the place and their coffee.</p>
+
+            <p><span class="bold">Faisal</span>:  yes It’s cool. So do you have any regrets about things in your life?</p>
+
+            <p><span class="bold blue">Ibrahim</span>:  You mean, things I should or shouldn’t have done? Yeah. I guess there are a few I feel sorry about. How about you?</p>
+
+            <p><span class="bold">Faisal</span>:  I wish I had done things differently. I missed some good opportunities because I was too immature. I should have listened to my parents. <span style="font-weight: bold;text-decoration: underline;">They</span> wanted me to go to college, and I actually had the grades, but I wanted to go get a job and go out into the world.</p>
+
+            <p><span class="bold blue">Ibrahim</span>:  Well, I guess you did very well for yourself. You have your own business, and you don’t have a boss.</p>
+
+            <p><span class="bold">Faisal</span>:  But I have lots of responsibilities. I wish I’d taken a course in business management. Now I have to employ someone to do the work I could probably be doing.</p>
+
+            <p><span class="bold blue">Ibrahim</span>:  You know!, it’s never too late. Life is full of chances. You can still go back to school. As for me, I got my master’s degree, and I had my mind set on a career. In the same time, I got  married and had children.</p>
+
+            <p><span class="bold">Faisal</span>:  Great! You are right. We still can do things we love to do as long as we are still alive.</p>
+
+            <p><span class="bold blue">Ibrahim</span>:  yes we can. Don’t waste time regretting over missed opportunities. Be positive  and start making new ones.</p>
+
+
+
+            <form onsubmit="return false">
+                <div class="questions">
+
+                                    
+                <div class="question">
+                    <h3>1- Faisal missed some good ….</h3>
+                    <div class="answers_grid answers" data-q="q1">
+                        <div class="answer q1">
+                            <input type="radio" name="q1"  value=" Movies ">
+                            <label > Movies </label>
+                        </div>
+                        <div class="answer q1">
+                            <input type="radio" name="q1" value=" Opportunities ">
+                            <label > Opportunities </label>
+                        </div>
+                        <div class="answer q1">
+                            <input type="radio" name="q1" value=" Fun ">
+                            <label > Fun </label>
+                        </div>
+                        <div class="answer q1">
+                            <input type="radio" name="q1" value=" Meetings ">
+                            <label > Meetings </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q1_card" class="show_btn" id="q1_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q1_card" data-btn="q1_btn" style="display: none;">
+                        
+                        
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q1_rating" style="display: none;">
+
+                        <div data-q="q1" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q1" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q1" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q1" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q1" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+
+
+
+                </div>
+                
+                <div class="question">
+                    <h3>2- The noun “regret” means ……    </h3>
+                    <div class="answers_grid answers" data-q="q2">
+                        <div class="answer q2">
+                            <input type="radio" name="q2"  value=" Feeling sorry ">
+                            <label >  Feeling sorry  </label>
+                        </div>
+                        <div class="answer q2">
+                            <input type="radio" name="q2" value=" Feeling well ">
+                            <label > Feeling well </label>
+                        </div>
+                        <div class="answer q2">
+                            <input type="radio" name="q2" value=" Feeling happy ">
+                            <label >  Feeling happy  </label>
+                        </div>
+                        <div class="answer q2">
+                            <input type="radio" name="q2" value=" Feeling okay ">
+                            <label > Feeling okay </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q2_card" class="show_btn" id="q2_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q2_card" data-btn="q2_btn" style="display: none;">
+                        
+                    </div>
+                    <div class="ratings" id="q2_rating" style="display: none;">
+
+                        <div data-q="q2" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q2" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q2" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q2" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q2" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="question">
+                    <h3>3- The underlined pronoun “ they” refers to …..   </h3>
+                    <div class="answers_grid answers" data-q="q3">
+                        <div class="answer q3">
+                            <input type="radio" name="q3"  value=" Faisal’s chances ">
+                            <label >  Faisal’s chances  </label>
+                        </div>
+                        <div class="answer q3">
+                            <input type="radio" name="q3" value=" Faisal’s friends ">
+                            <label >  Faisal’s friends  </label>
+                        </div>
+                        <div class="answer q3">
+                            <input type="radio" name="q3" value=" Faisal’s parents ">
+                            <label >  Faisal’s parents  </label>
+                        </div>
+                        <div class="answer q3">
+                            <input type="radio" name="q3" value=" Faisal’s employees ">
+                            <label >  Faisal’s employees  </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q3_card" class="show_btn" id="q3_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q3_card" data-btn="q3_btn" style="display: none;">
+                        
+                    </div>
+                    <div class="ratings" id="q3_rating" style="display: none;">
+
+                        <div data-q="q3" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q3" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q3" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q3" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q3" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>4- The synonymous of “ good chance “ is …..  </h3>
+                    <div class="answers_grid answers" data-q="q4">
+                        <div class="answer q4">
+                            <input type="radio" name="q4"  value=" No opportunity ">
+                            <label >   No opportunity   </label>
+                        </div>
+                        <div class="answer q4">
+                            <input type="radio" name="q4" value=" Opportunity ">
+                            <label >   Opportunity   </label>
+                        </div>
+                        <div class="answer q4">
+                            <input type="radio" name="q4" value=" Little opportunity ">
+                            <label >   Little opportunity   </label>
+                        </div>
+                        <div class="answer q4">
+                            <input type="radio" name="q4" value=" No possibility ">
+                            <label >   No possibility   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q4_card" class="show_btn" id="q4_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q4_card" data-btn="q4_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q4_rating" style="display: none;">
+
+                        <div data-q="q4" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q4" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q4" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q4" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q4" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>5- The main idea of the conversation is ……… </h3>
+                    <div class="answers_grid answers" data-q="q5">
+                        <div class="answer q5">
+                            <input type="radio" name="q5"  value=" Feeling sorry about missed chances ">
+                            <label >  Feeling sorry about missed chances.   </label>
+                        </div>
+                        <div class="answer q5">
+                            <input type="radio" name="q5" value=" Having a job is the only chance ">
+                            <label >    Having a job is the only chance. </label>
+                        </div>
+                        <div class="answer q5">
+                            <input type="radio" name="q5" value=" Studying at college is the only chance ">
+                            <label >   Studying at college is the only chance.  </label>
+                        </div>
+                        <div class="answer q5">
+                            <input type="radio" name="q5" value=" Don’t waste time regretting over missed chances ">
+                            <label >  Don’t waste time regretting over missed chances.  </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q5_card" class="show_btn" id="q5_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q5_card" data-btn="q5_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q5_rating" style="display: none;">
+
+                        <div data-q="q5" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q5" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q5" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q5" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q5" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>6- The phrase “ my mind set on a carrier” means I …… .to work.  </h3>
+                    <div class="answers_grid answers" data-q="q6">
+                        <div class="answer q6">
+                            <input type="radio" name="q6"  value=" Didn’t decide yet. ">
+                            <label >   Didn’t decide yet.   </label>
+                        </div>
+                        <div class="answer q6">
+                            <input type="radio" name="q6" value=" Decided ">
+                            <label >   Decided   </label>
+                        </div>
+                        <div class="answer q6">
+                            <input type="radio" name="q6" value=" Never decided ">
+                            <label >   Never decided   </label>
+                        </div>
+                        <div class="answer q6">
+                            <input type="radio" name="q6" value=" Not decided ">
+                            <label >   Not decided   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q6_card" class="show_btn" id="q6_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q6_card" data-btn="q6_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q6_rating" style="display: none;">
+
+                        <div data-q="q6" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q6" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q6" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q6" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q6" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>7- This conversation between Faisal and Ibrahim took place in the………  </h3>
+                    <div class="answers_grid answers" data-q="q7">
+                        <div class="answer q7">
+                            <input type="radio" name="q7"  value=" Coffee shop ">
+                            <label >  Coffee shop  </label>
+                        </div>
+                        <div class="answer q7">
+                            <input type="radio" name="q7" value=" Pharmacy. ">
+                            <label >  Pharmacy.  </label>
+                        </div>
+                        <div class="answer q7">
+                            <input type="radio" name="q7" value=" Supermarket. ">
+                            <label >   Supermarket.   </label>
+                        </div>
+                        <div class="answer q7">
+                            <input type="radio" name="q7" value=" Street. ">
+                            <label >  Street.   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q7_card" class="show_btn" id="q7_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q7_card" data-btn="q7_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q7_rating" style="display: none;">
+
+                        <div data-q="q7" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q7" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q7" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q7" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q7" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+                <div class="question">
+                    <h3>8- Faisal missed some good opportunities because he was too......  </h3>
+                    <div class="answers_grid answers" data-q="q8">
+                        <div class="answer q8">
+                            <input type="radio" name="q8"  value=" Busy ">
+                            <label >   Busy   </label>
+                        </div>
+                        <div class="answer q8">
+                            <input type="radio" name="q8" value=" Mature ">
+                            <label >   Mature   </label>
+                        </div>
+                        <div class="answer q8">
+                            <input type="radio" name="q8" value=" Immature ">
+                            <label >   Immature    </label>
+                        </div>
+                        <div class="answer q8">
+                            <input type="radio" name="q8" value=" Smart ">
+                            <label > Smart </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q8_card" class="show_btn" id="q8_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q8_card" data-btn="q8_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q8_rating" style="display: none;">
+
+                        <div data-q="q8" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q8" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q8" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q8" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q8" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>9- All of the following ideas are related to the conversation, except ..... </h3>
+                    <div class="answers_grid answers" data-q="q9">
+                        <div class="answer q9">
+                            <input type="radio" name="q9"  value=" Studying at college ">
+                            <label >  Studying at college   </label>
+                        </div>
+                        <div class="answer q9">
+                            <input type="radio" name="q9" value=" Bad grades ">
+                            <label >    Bad grades   </label>
+                        </div>
+                        <div class="answer q9">
+                            <input type="radio" name="q9" value=" Taking management business course ">
+                            <label >  Taking management business course   </label>
+                        </div>
+                        <div class="answer q9">
+                            <input type="radio" name="q9" value=" Having a job ">
+                            <label >   Having a job   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q9_card" class="show_btn" id="q9_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q9_card" data-btn="q9_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q9_rating" style="display: none;">
+
+                        <div data-q="q9" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q9" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q9" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q9" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q9" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>10- This statement from the conversation <span class="underline">“ Well, I guess you did very well for yourself. You have your own business, and you don’t have a boss breathing down your neck”</span> represents …..   </h3>
+                    <div class="answers_grid answers" data-q="q10">
+                        <div class="answer q10">
+                            <input type="radio" name="q10"  value="A fact">
+                            <label >   A fact   </label>
+                        </div>
+                        <div class="answer q10">
+                            <input type="radio" name="q10" value=" An opinion ">
+                            <label >  An opinion  </label>
+                        </div>
+                        <div class="answer q10">
+                            <input type="radio" name="q10" value="A conception">
+                            <label >   A conception   </label>
+                        </div>
+                        <div class="answer q10">
+                            <input type="radio" name="q10" value="A procedure">
+                            <label >   A procedure   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q10_card" class="show_btn" id="q10_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q10_card" data-btn="q10_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q10_rating" style="display: none;">
+
+                        <div data-q="q10" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q10" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q10" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q10" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q10" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>11- Ibrahim was ……. by telling Faisal It’s never too late to go back to school.  </h3>
+                    <div class="answers_grid answers" data-q="q11">
+                        <div class="answer q11">
+                            <input type="radio" name="q11"  value=" Wrong ">
+                            <label >   Wrong  </label>
+                        </div>
+                        <div class="answer q11">
+                            <input type="radio" name="q11" value=" Right ">
+                            <label >   Right   </label>
+                        </div>
+                        <div class="answer q11">
+                            <input type="radio" name="q11" value=" Stupid ">
+                            <label >  Stupid  </label>
+                        </div>
+                        <div class="answer q11">
+                            <input type="radio" name="q11" value=" Crazy ">
+                            <label >   Crazy   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q11_card" class="show_btn" id="q11_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q11_card" data-btn="q11_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q11_rating" style="display: none;">
+
+                        <div data-q="q11" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q11" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q11" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q11" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q11" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>12- All of the following behaviors are acceptable in case you missed an opportunity, except ……. </h3>
+                    <div class="answers_grid answers" data-q="q12">
+                        <div class="answer q12">
+                            <input type="radio" name="q12"  value=" Trying again ">
+                            <label >   Trying again   </label>
+                        </div>
+                        <div class="answer q12">
+                            <input type="radio" name="q12" value=" Being positive ">
+                            <label >   Being positive   </label>
+                        </div>
+                        <div class="answer q12">
+                            <input type="radio" name="q12" value=" Being negative ">
+                            <label >   Being negative   </label>
+                        </div>
+                        <div class="answer q12">
+                            <input type="radio" name="q12" value=" Making new opportunities ">
+                            <label >   Making new opportunities   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q12_card" class="show_btn" id="q12_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q12_card" data-btn="q12_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q12_rating" style="display: none;">
+
+                        <div data-q="q12" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q12" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q12" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q12" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q12" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>13- Which one of the following sentences include an idiomatic expression?  </h3>
+                    <div class="answers_grid answers" data-q="q13">
+                        <div class="answer q13">
+                            <input type="radio" name="q13"  value=" I want to go to college ">
+                            <label >   I want to go to college  </label>
+                        </div>
+                        <div class="answer q13">
+                            <input type="radio" name="q13" value=" I want to go out into the world ">
+                            <label >  I want to go out into the world   </label>
+                        </div>
+                        <div class="answer q13">
+                            <input type="radio" name="q13" value=" I want to take management business course ">
+                            <label >  I want to take management business course   </label>
+                        </div>
+                        <div class="answer q13">
+                            <input type="radio" name="q13" value=" I want to get a job ">
+                            <label > I want to get a job   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q13_card" class="show_btn" id="q13_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q13_card" data-btn="q13_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q13_rating" style="display: none;">
+
+                        <div data-q="q13" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q13" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q13" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q13" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q13" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+
+                                
+                <div class="question">
+                    <h3>14- The word “ probably” belongs to which of the following word groups?  </h3>
+                    <div class="answers_grid answers" data-q="q14">
+                        <div class="answer q14">
+                            <input type="radio" name="q14"  value=" Maybe, possibly, perhaps ">
+                            <label >   Maybe, possibly, perhaps   </label>
+                        </div>
+                        <div class="answer q14">
+                            <input type="radio" name="q14" value=" Not possibly, not likely, not supposedly ">
+                            <label >   Not possibly, not likely, not supposedly  </label>
+                        </div>
+                        <div class="answer q14">
+                            <input type="radio" name="q14" value=" Agree, accept, okay ">
+                            <label >   Agree, accept, okay   </label>
+                        </div>
+                        <div class="answer q14">
+                            <input type="radio" name="q14" value=" Correct, true, right ">
+                            <label >   Correct, true, right  </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q14_card" class="show_btn" id="q14_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q14_card" data-btn="q14_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q14_rating" style="display: none;">
+
+                        <div data-q="q14" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q14" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q14" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q14" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q14" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>15- This statement <span class="underline">“ You know!, it’s never too late. Life is full of chances. “</span> shows that Ibrahim has a …… attitude about life.</h3>
+                    <div class="answers_grid answers" data-q="q15">
+                        <div class="answer q15">
+                            <input type="radio" name="q15"  value=" positive ">
+                            <label >    positive    </label>
+                        </div>
+                        <div class="answer q15">
+                            <input type="radio" name="q15" value=" Negative ">
+                            <label >   Negative   </label>
+                        </div>
+                        <div class="answer q15">
+                            <input type="radio" name="q15" value=" Sad ">
+                            <label >   Sad   </label>
+                        </div>
+                        <div class="answer q15">
+                            <input type="radio" name="q15" value=" Angry ">
+                            <label >   Angry   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q15_card" class="show_btn" id="q15_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q15_card" data-btn="q15_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q15_rating" style="display: none;">
+
+                        <div data-q="q15" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q15" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q15" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q15" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q15" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+
+                                
+                <div class="question">
+                    <h3>16- Which of the following statements best summarizes the conversation?</h3>
+                    <div class="answers_grid answers" data-q="q16">
+                        <div class="answer q16">
+                            <input type="radio" name="q16"  value=" Faisal and Ibrahim discuss things that should or shouldn’t do in their lives. ">
+                            <label >   Faisal and Ibrahim discuss things that should or shouldn’t do in their lives.  </label>
+                        </div>
+                        <div class="answer q16">
+                            <input type="radio" name="q16" value=" It’s never too late to do things you want. ">
+                            <label >   It’s never too late to do things you want.  </label>
+                        </div>
+                        <div class="answer q16">
+                            <input type="radio" name="q16" value=" Always listen to your parents. ">
+                            <label >  Always listen to your parents.  </label>
+                        </div>
+                        <div class="answer q16">
+                            <input type="radio" name="q16" value=" Take a course in business management. ">
+                            <label >    Take a course in business management.   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q16_card" class="show_btn" id="q16_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q16_card" data-btn="q16_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q16_rating" style="display: none;">
+
+                        <div data-q="q16" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q16" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q16" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q16" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q16" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+                                
+                <div class="question">
+                    <h3>17- The most suitable title for the conversation is …….</h3>
+                    <div class="answers_grid answers" data-q="q17">
+                        <div class="answer q17">
+                            <input type="radio" name="q17"  value=" Faisal's parents ">
+                            <label >   Faisal's parents  </label>
+                        </div>
+                        <div class="answer q17">
+                            <input type="radio" name="q17" value=" Wishes and regrets ">
+                            <label >   Wishes and regrets   </label>
+                        </div>
+                        <div class="answer q17">
+                            <input type="radio" name="q17" value=" Ibrahim's job ">
+                            <label >   Ibrahim's job   </label>
+                        </div>
+                        <div class="answer q17">
+                            <input type="radio" name="q17" value=" Good grades ">
+                            <label >  Good grades   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q17_card" class="show_btn" id="q17_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q17_card" data-btn="q17_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q17_rating" style="display: none;">
+
+                        <div data-q="q17" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q17" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q17" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q17" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q17" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+                                
+                <div class="question">
+                    <h3>18- We can reduce wasting time regretting over missed opportunities by …..</h3>
+                    <div class="answers_grid answers" data-q="q18">
+                        <div class="answer q18">
+                            <input type="radio" name="q18"  value=" Being negative ">
+                            <label >    Being negative    </label>
+                        </div>
+                        <div class="answer q18">
+                            <input type="radio" name="q18" value=" Stopping trying ">
+                            <label >   Stopping trying   </label>
+                        </div>
+                        <div class="answer q18">
+                            <input type="radio" name="q18" value=" Starting making new ones ">
+                            <label >    Starting making new ones    </label>
+                        </div>
+                        <div class="answer q18">
+                            <input type="radio" name="q18" value=" Feeling sorry about it ">
+                            <label >    Feeling sorry about it    </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q18_card" class="show_btn" id="q18_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q18_card" data-btn="q18_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q18_rating" style="display: none;">
+
+                        <div data-q="q18" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q18" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q18" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q18" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q18" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+                                
+                <div class="question">
+                    <h3>19- What would happen if Faisal had taken a course in business management? </h3>
+                    <div class="answers_grid answers" data-q="q19">
+                        <div class="answer q19">
+                            <input type="radio" name="q19"  value=" He would have to employ someone else ">
+                            <label >   He would have to employ someone else  </label>
+                        </div>
+                        <div class="answer q19">
+                            <input type="radio" name="q19" value=" He could be doing the work himself ">
+                            <label >   He could be doing the work himself   </label>
+                        </div>
+                        <div class="answer q19">
+                            <input type="radio" name="q19" value=" He could be asking Ibrahim to do the work ">
+                            <label >   He could be asking Ibrahim to do the work  </label>
+                        </div>
+                        <div class="answer q19">
+                            <input type="radio" name="q19" value=" He would have problems in work ">
+                            <label >  He would have problems in work   </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q19_card" class="show_btn" id="q19_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q19_card" data-btn="q19_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q19_rating" style="display: none;">
+
+                        <div data-q="q19" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q19" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q19" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q19" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q19" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+                                
+                <div class="question">
+                    <h3>20- The best conclusion drawn from the conversation is .....   </h3>
+                    <div class="answers_grid answers" data-q="q20">
+                        <div class="answer q20">
+                            <input type="radio" name="q20"  value=" You still alive = It’s never too late to do things you wish ">
+                            <label >   You still alive = It’s never too late to do things you wish  </label>
+                        </div>
+                        <div class="answer q20">
+                            <input type="radio" name="q20" value=" You still alive = It's not possible to do things you wish ">
+                            <label >   You still alive = It's not possible to do things you wish  </label>
+                        </div>
+                        <div class="answer q20">
+                            <input type="radio" name="q20" value=" You still alive = It's too late to do things you wish ">
+                            <label >   You still alive = It's too late to do things you wish   </label>
+                        </div>
+                        <div class="answer q20">
+                            <input type="radio" name="q20" value=" You still alive = No chance to do things you wish ">
+                            <label >   You still alive = No chance to do things you wish  </label>
+                        </div>
+                    </div>
+                    <div class="btn_cont btn_center  mg-5"  >
+                        <button data-card="q20_card" class="show_btn" id="q20_btn" style="display: none;">Show Feedback</button>
+                    </div>
+                    <div class="box" id="q20_card" data-btn="q20_btn" style="display: none;">
+
+                        
+                    </div>
+                    
+                    <div class="ratings" id="q20_rating" style="display: none;">
+
+
+                        <div data-q="q20" class="rating hov_red"><i class="fa-solid fa-face-angry"></i>  <div>Poor</div> </div>
+                        <div data-q="q20" class="rating hov_orange"><i class="fa-solid fa-face-frown"></i> <div>Not bad</div> </div>
+                        <div data-q="q20" class="rating hov_yellow"><i class="fa-solid fa-face-meh"></i> <div>Ok</div> </div>
+                        <div data-q="q20" class="rating hov_lightgreen"><i class="fa-solid fa-face-smile"></i> <div>So good</div> </div>
+                        <div data-q="q20" class="rating hov_green"><i class="fa-solid fa-face-grin"></i> <div>Excellent</div> </div>
+
+                    </div>
+                </div>
+
+
+                
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+                <br>
+                <hr style="border-top: .3px solid rgba(128, 128, 128, 0.281);">
+                <br>
+                <div class="btn_cont">
+                    <button style="width: 120px;" id="next_btn">Next</button>
+                    <button style="width: 120px;display: none;" id="back_btn">Back</button>
+                </div>
+                
+
+            
+            </form>
+        
+        
+        
+        
+        </div>
+
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/8b8be9ae55.js" crossorigin="anonymous"></script>
+
+    <script src="./js/second_detailed.js"></script>
+    
+</body>
+</html>

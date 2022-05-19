@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Results</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      if (
+        !localStorage.getItem('answers_data') &&
+        !localStorage.getItem('rating')
+      ) {
+        location.replace('/')
+      }
+    </script>
+  </head>
+  <body class="results-body">
+    <div class="container py-2">
+      <h1 class="text-center mb-2">Results</h1>
+      <div class="grid">
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="one_result_chart"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="one_rate_chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/results.js"></script>
+  </body>
+</html>
