@@ -244,7 +244,8 @@ new Chart(one_result_ctx, {
       tooltip: {
         callbacks: {
           label: context => `Percentage: ${context.formattedValue}%`
-        }
+        },
+        enabled: false
       }
     },
     scales: {
@@ -308,7 +309,7 @@ const rating_chart = new Chart(one_rate_ctx, {
       tooltip: {
         callbacks: {
           label: context => [
-            `Percentage: ${context.formattedValue}%`,
+            // `Percentage: ${context.formattedValue}%`,
             `Poor: ${levelsRatings[context.dataIndex].poor}`,
             `Not bad: ${levelsRatings[context.dataIndex].notBad}`,
             `Ok: ${levelsRatings[context.dataIndex].ok}`,
