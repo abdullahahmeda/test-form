@@ -140,7 +140,7 @@ answers_data.forEach((element, i) => {
 })
 
 Chart.defaults.font.family = "'Source Sans Pro'"
-Chart.defaults.plugins.title.font.size = 18
+Chart.defaults.plugins.title.font.size = 17
 
 const myChart = new Chart(ctx, {
   type: 'bar',
@@ -166,7 +166,8 @@ const myChart = new Chart(ctx, {
         display: false
       },
       title: {
-        text: 'Test result & Feedback',
+        text:
+          "Student's Overall Performance of Reading Skills & Feedback Evaluation",
         display: true
       },
       tooltip: {
@@ -237,7 +238,7 @@ new Chart(one_result_ctx, {
         display: false
       },
       title: {
-        text: 'Correct answers per level',
+        text: "Student's Performance of Reading Comprehension Skills per Level",
         display: true
       },
       tooltip: {
@@ -301,7 +302,7 @@ const rating_chart = new Chart(one_rate_ctx, {
         display: false
       },
       title: {
-        text: 'Feedback evaluation per level',
+        text: "Student's Feedback Evaluation per Level",
         display: true
       },
       tooltip: {
