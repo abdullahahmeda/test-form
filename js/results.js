@@ -21,10 +21,20 @@ function Percentage (part_num, total_num) {
   return (100 * part_num) / total_num
 }
 
+const levelsCorrectAnswers = [
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]
+]
+
 answers_data.forEach((element, i) => {
   const current_num = (i + 1).toString()
+  const level = parseInt(i / 4)
 
   if (element['q' + current_num] === 'right') {
+    levelsCorrectAnswers[level][i % 4] = 1
     right_ans_count += 1
   }
 })
@@ -45,7 +55,7 @@ const levelsRatings = [
 
 rating_data.forEach((element, i) => {
   const current_num = (i + 1).toString()
-  let level = parseInt(i / 4)
+  const level = parseInt(i / 4)
 
   if (element['q' + current_num] === 'Poor') {
     poor_rate_count += 1
@@ -173,7 +183,8 @@ const myChart = new Chart(ctx, {
       tooltip: {
         callbacks: {
           label: context => context.formattedValue + '%'
-        }
+        },
+        enabled: false
       }
     },
     maintainAspectRatio: false,
@@ -243,9 +254,22 @@ new Chart(one_result_ctx, {
       },
       tooltip: {
         callbacks: {
-          label: context => `Percentage: ${context.formattedValue}%`
-        },
-        enabled: false
+          label: context => [
+            // `Percentage: ${context.formattedValue}%`,
+            'First question: ' +
+              levelsCorrectAnswers[context.dataIndex][0] * 25 +
+              '%',
+            'Second question: ' +
+              levelsCorrectAnswers[context.dataIndex][1] * 25 +
+              '%',
+            'Third question: ' +
+              levelsCorrectAnswers[context.dataIndex][2] * 25 +
+              '%',
+            'Fourth question: ' +
+              levelsCorrectAnswers[context.dataIndex][3] * 25 +
+              '%'
+          ]
+        }
       }
     },
     scales: {
@@ -310,11 +334,11 @@ const rating_chart = new Chart(one_rate_ctx, {
         callbacks: {
           label: context => [
             // `Percentage: ${context.formattedValue}%`,
-            `Poor: ${levelsRatings[context.dataIndex].poor}`,
-            `Not bad: ${levelsRatings[context.dataIndex].notBad}`,
-            `Ok: ${levelsRatings[context.dataIndex].ok}`,
-            `So good: ${levelsRatings[context.dataIndex].soGood}`,
-            `Excellent: ${levelsRatings[context.dataIndex].excellent}`
+            'Poor: ' + levelsRatings[context.dataIndex].poor,
+            'Not bad: ' + levelsRatings[context.dataIndex].notBad,
+            'Ok: ' + levelsRatings[context.dataIndex].ok,
+            'So good: ' + levelsRatings[context.dataIndex].soGood,
+            'Excellent: ' + levelsRatings[context.dataIndex].excellent
           ]
         }
       }

@@ -90,7 +90,7 @@ const TryAgain_words = [
   'Try again!',
   'Come on! You can do it.',
   'Never give up!',
-  'Keep tying!',
+  'Keep trying!',
   'Stay strong!',
   'Try once more!',
   'Never Stop!'
@@ -227,6 +227,9 @@ next_btn.addEventListener('click', () => {
       if (page == 5) {
         next_btn.style.display = 'none'
         finish_btn.style.display = 'block'
+      } else {
+        next_btn.style.display = 'block'
+        finish_btn.style.display = 'none'
       }
     }
   }
@@ -234,7 +237,8 @@ next_btn.addEventListener('click', () => {
 
 back_btn.addEventListener('click', () => {
   page -= 1
-
+  next_btn.style.display = 'block'
+  finish_btn.style.display = 'none'
   document.querySelector('.body').scrollTop = 0
   RenderPage()
   if (page == 1) {
@@ -243,9 +247,11 @@ back_btn.addEventListener('click', () => {
 })
 
 finish_btn.addEventListener('click', () => {
-  localStorage.setItem('answers_data', JSON.stringify(answers_counter))
-  localStorage.setItem('rating', JSON.stringify(ratings_data))
-  location.replace('results.html')
+  if (Validation()) {
+    localStorage.setItem('answers_data', JSON.stringify(answers_counter))
+    localStorage.setItem('rating', JSON.stringify(ratings_data))
+    location.replace('results.html')
+  }
 })
 
 function getRandomWord (words) {
@@ -405,6 +411,7 @@ const rating = Array.from(document.querySelectorAll('.rating'))
 
 rating.forEach(ele => {
   ele.addEventListener('click', e => {
+    console.log(e.currentTarget.innerText)
     const current_num = parseInt(e.currentTarget.dataset.q.split('q')[1]) - 1
     ratings_data[current_num][e.currentTarget.dataset.q] =
       e.currentTarget.innerText
