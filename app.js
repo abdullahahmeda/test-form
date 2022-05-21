@@ -411,7 +411,6 @@ const rating = Array.from(document.querySelectorAll('.rating'))
 
 rating.forEach(ele => {
   ele.addEventListener('click', e => {
-    console.log(e.currentTarget.innerText)
     const current_num = parseInt(e.currentTarget.dataset.q.split('q')[1]) - 1
     ratings_data[current_num][e.currentTarget.dataset.q] =
       e.currentTarget.innerText

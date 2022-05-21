@@ -44,6 +44,29 @@ const ratings_data = [
   { q20: '' }
 ]
 
+const answers_counter = [
+  { q1: '' },
+  { q2: '' },
+  { q3: '' },
+  { q4: '' },
+  { q5: '' },
+  { q6: '' },
+  { q7: '' },
+  { q8: '' },
+  { q9: '' },
+  { q10: '' },
+  { q11: '' },
+  { q12: '' },
+  { q13: '' },
+  { q14: '' },
+  { q15: '' },
+  { q16: '' },
+  { q17: '' },
+  { q18: '' },
+  { q19: '' },
+  { q20: '' }
+]
+
 const right_words = [
   'Well done!',
   'Excellent!',
@@ -55,10 +78,10 @@ const right_words = [
   'You did it!',
   'That’s good!',
   'Wonderful!',
-  'You got it!',
+  'You got it',
   'I’m Proud of you!',
   'Nice work!',
-  'Keep it up!',
+  'Keep it up',
   'You did very well!'
 ]
 
@@ -116,9 +139,11 @@ const wrong_sounds = [
 ]
 
 const next_btn = document.getElementById('next_btn')
+const finish_btn = document.getElementById('finish_btn')
 const back_btn = document.getElementById('back_btn')
 
 let page = 1
+
 function RenderPage () {
   const count = page * 4
   if (page < 5 || page == 0) {
@@ -201,6 +226,10 @@ next_btn.addEventListener('click', () => {
       back_btn.style.display = 'block'
       if (page == 5) {
         next_btn.style.display = 'none'
+        finish_btn.style.display = 'block'
+      } else {
+        next_btn.style.display = 'block'
+        finish_btn.style.display = 'none'
       }
     }
   }
@@ -208,11 +237,20 @@ next_btn.addEventListener('click', () => {
 
 back_btn.addEventListener('click', () => {
   page -= 1
-  console.log(page)
+  next_btn.style.display = 'block'
+  finish_btn.style.display = 'none'
   document.querySelector('.body').scrollTop = 0
   RenderPage()
   if (page == 1) {
     back_btn.style.display = 'none'
+  }
+})
+
+finish_btn.addEventListener('click', () => {
+  if (Validation()) {
+    localStorage.setItem('answers_data', JSON.stringify(answers_counter))
+    localStorage.setItem('rating', JSON.stringify(ratings_data))
+    location.replace('results.html')
   }
 })
 
@@ -221,6 +259,7 @@ function getRandomWord (words) {
 }
 
 let try_count
+
 let wrong_counter = -1
 
 const answers_array = Array.from(document.querySelectorAll('.answers'))
@@ -240,6 +279,9 @@ answers_array.forEach(ele => {
         answers[parseInt(ele.dataset.q.split('q')[1]) - 1][ele.dataset.q]
 
       if (right_ans == e.target.value) {
+        const current_num = parseInt(q_num.split('q')[1]) - 1
+        answers_counter[current_num][q_num] = 'right'
+
         const all_answers = Array.from(document.querySelectorAll('.answer'))
         all_answers.forEach(ele => {
           if (!ele.children[0].classList.contains('none_editable')) {
@@ -269,13 +311,13 @@ answers_array.forEach(ele => {
                 )}</span> <br/> Correct answer.</div>
                 
                 `
+
         document.getElementById(ele.dataset.q + '_rating').style.display =
           'flex'
         q_array.forEach(radio => {
           radio.children[0].disabled = true
           radio.children[0].classList.add('none_editable')
         })
-        console.log(q_array)
 
         const x_marks = Array.from(document.querySelectorAll('.x_mark'))
         x_marks.forEach(ele => {
@@ -307,6 +349,8 @@ answers_array.forEach(ele => {
           })
         } else {
           if (card.children[1].classList.contains('try_again')) {
+            const current_num = parseInt(q_num.split('q')[1]) - 1
+            answers_counter[current_num][q_num] = 'wrong'
             const all_answers = Array.from(document.querySelectorAll('.answer'))
             all_answers.forEach(ele => {
               if (!ele.children[0].classList.contains('none_editable')) {
