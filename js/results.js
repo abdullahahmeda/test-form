@@ -97,14 +97,14 @@ function calculateTotalFeedbackPercentage () {
 
 function calculateFeedbackPerLevelPercentage () {
   return levelsRatings.map(levelRating => {
-    return (
+    return parseInt(
       ((levelRating.poor * 0.2 +
         levelRating.notBad * 0.4 +
         levelRating.ok * 0.6 +
         levelRating.soGood * 0.8 +
         levelRating.excellent * 1) *
         100) /
-      4
+        4
     )
   })
 }
