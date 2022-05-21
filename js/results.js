@@ -103,11 +103,11 @@ function calculateTotalFeedbackPercentage () {
 function calculateFeedbackForLevel (level) {
   const levelRating = levelsRatings[level - 1]
   return parseInt(
-    ((levelRating.poor * 0.2 +
-      levelRating.notBad * 0.4 +
-      levelRating.ok * 0.6 +
-      levelRating.soGood * 0.8 +
-      levelRating.excellent * 1) *
+    ((levelRating[0] * 0.2 +
+      levelRating[1] * 0.4 +
+      levelRating[2] * 0.6 +
+      levelRating[3] * 0.8 +
+      levelRating[4] * 1) *
       100) /
       4
   )
