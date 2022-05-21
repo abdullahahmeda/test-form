@@ -59,27 +59,37 @@ rating_data.forEach((element, i) => {
 
   if (element['q' + current_num] === 'Poor') {
     poor_rate_count += 1
-    levelsRatings[level].poor++
+    if (levelsRatings[level].poor)
+      levelsRatings[level].poor = levelsRatings[level].poor + 1
+    else levelsRatings[level].poor = 1
   }
 
   if (element['q' + current_num] === 'Not bad') {
     notBad_rate_count += 1
-    levelsRatings[level].notBad++
+    if (levelsRatings[level].notBad)
+      levelsRatings[level].notBad = levelsRatings[level].notBad + 1
+    else levelsRatings[level].notBad = 1
   }
 
   if (element['q' + current_num] === 'Ok') {
     ok_rate_count += 1
-    levelsRatings[level].ok++
+    if (levelsRatings[level].ok)
+      levelsRatings[level].ok = levelsRatings[level].ok + 1
+    else levelsRatings[level].ok = 1
   }
 
   if (element['q' + current_num] === 'So good') {
     soGood_rate_count += 1
-    levelsRatings[level].soGood++
+    if (levelsRatings[level].soGood)
+      levelsRatings[level].soGood = levelsRatings[level].soGood + 1
+    else levelsRatings[level].soGood = 1
   }
 
   if (element['q' + current_num] === 'Excellent') {
     excellent_rate_count += 1
-    levelsRatings[level].excellent++
+    if (levelsRatings[level].excellent)
+      levelsRatings[level].excellent = levelsRatings[level].excellent + 1
+    else levelsRatings[level].excellent = 1
   }
 })
 
