@@ -95,6 +95,19 @@ function calculateTotalFeedbackPercentage () {
   )
 }
 
+function calculateFeedbackForLevel (level) {
+  const levelRating = levelsRatings[level - 1]
+  return parseInt(
+    ((levelRating.poor * 0.2 +
+      levelRating.notBad * 0.4 +
+      levelRating.ok * 0.6 +
+      levelRating.soGood * 0.8 +
+      levelRating.excellent * 1) *
+      100) /
+      4
+  )
+}
+
 function calculateFeedbackPerLevelPercentage () {
   return levelsRatings.map(levelRating => {
     return parseInt(
@@ -301,7 +314,13 @@ const rating_chart = new Chart(one_rate_ctx, {
     datasets: [
       {
         label: 'Rating',
-        data: calculateFeedbackPerLevelPercentage(),
+        data: [
+          calculateFeedbackForLevel(1),
+          calculateFeedbackForLevel(2),
+          calculateFeedbackForLevel(3),
+          calculateFeedbackForLevel(4),
+          calculateFeedbackForLevel(5)
+        ],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
