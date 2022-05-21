@@ -195,7 +195,7 @@ const myChart = new Chart(ctx, {
       },
       title: {
         text:
-          "Student's Overall Performance of Reading Skills & Feedback Evaluation",
+          "Student's Overall Performance of Reading Comprehension Skills & Feedback Evaluation",
         display: true
       },
       tooltip: {
@@ -358,11 +358,11 @@ const rating_chart = new Chart(one_rate_ctx, {
         callbacks: {
           label: context => [
             // `Percentage: ${context.formattedValue}%`,
-            'Poor: ' + levelsRatings[context.dataIndex][0],
-            'Not bad: ' + levelsRatings[context.dataIndex][1],
-            'Ok: ' + levelsRatings[context.dataIndex][2],
-            'So good: ' + levelsRatings[context.dataIndex][3],
-            'Excellent: ' + levelsRatings[context.dataIndex][4]
+            'Poor: ' + levelsRatings[context.dataIndex][0] * 20 + '%',
+            'Not bad: ' + levelsRatings[context.dataIndex][1] * 20 + '%',
+            'Ok: ' + levelsRatings[context.dataIndex][2] * 20 + '%',
+            'So good: ' + levelsRatings[context.dataIndex][3] * 20 + '%',
+            'Excellent: ' + levelsRatings[context.dataIndex][4] * 20 + '%'
           ]
         }
       }
