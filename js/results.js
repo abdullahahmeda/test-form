@@ -313,7 +313,7 @@ const rating_chart = new Chart(one_rate_ctx, {
     labels: LEVELS,
     datasets: [
       {
-        label: 'Rating',
+        // label: 'Rating',
         data: [
           calculateFeedbackForLevel(1),
           calculateFeedbackForLevel(2),
@@ -383,3 +383,6 @@ const rating_chart = new Chart(one_rate_ctx, {
     }
   }
 })
+
+document.write(JSON.stringify(levelsRatings) + '<br>')
+document.write(levelsRatings[0].poor)
