@@ -389,5 +389,6 @@ const rating_chart = new Chart(one_rate_ctx, {
   }
 })
 
+document.write(localStorage.getItem('rating') + '<br>')
 document.write(JSON.stringify(levelsRatings) + '<br>')
 document.write(levelsRatings[0].poor)
