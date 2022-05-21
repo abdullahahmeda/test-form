@@ -358,11 +358,11 @@ const rating_chart = new Chart(one_rate_ctx, {
         callbacks: {
           label: context => [
             // `Percentage: ${context.formattedValue}%`,
-            'Poor: ' + levelsRatings[context.dataIndex][0] * 20 + '%',
-            'Not bad: ' + levelsRatings[context.dataIndex][1] * 20 + '%',
-            'Ok: ' + levelsRatings[context.dataIndex][2] * 20 + '%',
-            'So good: ' + levelsRatings[context.dataIndex][3] * 20 + '%',
-            'Excellent: ' + levelsRatings[context.dataIndex][4] * 20 + '%'
+            'Poor: ' + levelsRatings[context.dataIndex][0] * 25 + '%',
+            'Not bad: ' + levelsRatings[context.dataIndex][1] * 25 + '%',
+            'Ok: ' + levelsRatings[context.dataIndex][2] * 25 + '%',
+            'So good: ' + levelsRatings[context.dataIndex][3] * 25 + '%',
+            'Excellent: ' + levelsRatings[context.dataIndex][4] * 25 + '%'
           ]
         }
       }
