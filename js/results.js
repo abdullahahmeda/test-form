@@ -46,11 +46,11 @@ let soGood_rate_count = 0
 let excellent_rate_count = 0
 
 const levelsRatings = [
-  { poor: 0, notBad: 0, ok: 0, soGood: 0, excellent: 0 },
-  { poor: 0, notBad: 0, ok: 0, soGood: 0, excellent: 0 },
-  { poor: 0, notBad: 0, ok: 0, soGood: 0, excellent: 0 },
-  { poor: 0, notBad: 0, ok: 0, soGood: 0, excellent: 0 },
-  { poor: 0, notBad: 0, ok: 0, soGood: 0, excellent: 0 }
+  [0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0]
 ]
 
 rating_data.forEach((element, i) => {
@@ -59,37 +59,32 @@ rating_data.forEach((element, i) => {
 
   if (element['q' + current_num] === 'Poor') {
     poor_rate_count += 1
-    if (levelsRatings[level].poor)
-      levelsRatings[level].poor = levelsRatings[level].poor + 1
-    else levelsRatings[level].poor = 1
+    if (levelsRatings[level][0]) levelsRatings[level][0] += 1
+    else levelsRatings[level][0] = 1
   }
 
   if (element['q' + current_num] === 'Not bad') {
     notBad_rate_count += 1
-    if (levelsRatings[level].notBad)
-      levelsRatings[level].notBad = levelsRatings[level].notBad + 1
-    else levelsRatings[level].notBad = 1
+    if (levelsRatings[level][1]) levelsRatings[level][1] += 1
+    else levelsRatings[level][1] = 1
   }
 
   if (element['q' + current_num] === 'Ok') {
     ok_rate_count += 1
-    if (levelsRatings[level].ok)
-      levelsRatings[level].ok = levelsRatings[level].ok + 1
-    else levelsRatings[level].ok = 1
+    if (levelsRatings[level][2]) levelsRatings[level][2] += 1
+    else levelsRatings[level][2] = 1
   }
 
   if (element['q' + current_num] === 'So good') {
     soGood_rate_count += 1
-    if (levelsRatings[level].soGood)
-      levelsRatings[level].soGood = levelsRatings[level].soGood + 1
-    else levelsRatings[level].soGood = 1
+    if (levelsRatings[level][3]) levelsRatings[level][3] += 1
+    else levelsRatings[level][3] = 1
   }
 
   if (element['q' + current_num] === 'Excellent') {
     excellent_rate_count += 1
-    if (levelsRatings[level].excellent)
-      levelsRatings[level].excellent = levelsRatings[level].excellent + 1
-    else levelsRatings[level].excellent = 1
+    if (levelsRatings[level][4]) levelsRatings[level][4] += 1
+    else levelsRatings[level][4] = 1
   }
 })
 
@@ -363,11 +358,11 @@ const rating_chart = new Chart(one_rate_ctx, {
         callbacks: {
           label: context => [
             // `Percentage: ${context.formattedValue}%`,
-            'Poor: ' + levelsRatings[context.dataIndex].poor,
-            'Not bad: ' + levelsRatings[context.dataIndex].notBad,
-            'Ok: ' + levelsRatings[context.dataIndex].ok,
-            'So good: ' + levelsRatings[context.dataIndex].soGood,
-            'Excellent: ' + levelsRatings[context.dataIndex].excellent
+            'Poor: ' + levelsRatings[context.dataIndex][0],
+            'Not bad: ' + levelsRatings[context.dataIndex][1],
+            'Ok: ' + levelsRatings[context.dataIndex][2],
+            'So good: ' + levelsRatings[context.dataIndex][3],
+            'Excellent: ' + levelsRatings[context.dataIndex][4]
           ]
         }
       }
