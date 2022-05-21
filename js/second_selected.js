@@ -357,7 +357,7 @@ answers_array.forEach(ele => {
 
         const txt = document.createElement('div')
         txt.className = ' bold'
-        txt.style.fontSize = '18px'
+        txt.style.fontSize = '22px'
         txt.textContent = 'Please, Select the feedback of your choice :'
         const br = document.createElement('br')
         choose_btns.prepend(br)
@@ -489,7 +489,7 @@ answers_array.forEach(ele => {
 
             const txt = document.createElement('div')
             txt.className = ' bold'
-            txt.style.fontSize = '18px'
+            txt.style.fontSize = '22px'
             txt.textContent = 'Please, Select the feedback of your choice :'
             const br = document.createElement('br')
             choose_btns.prepend(br)
