@@ -25,6 +25,10 @@
   margin: auto;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 .py-2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -64,12 +68,12 @@ p {
   width: 52%;
   margin: auto;
   margin-top: 5vh;
-  font-size: 18px;
+  font-size: 22px;
   text-align: left;
 }
 
 label {
-  font-size: 17px;
+  font-size: 21px;
 }
 
 .red {
@@ -145,13 +149,13 @@ form {
   padding: 1%;
   color: white;
   width: 120px;
-  font-size: 17px;
+  font-size: 20px;
   transition: 0.3s;
 }
 
 .choose_btns {
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 22px;
   flex-direction: row;
   align-items: center;
 
@@ -204,7 +208,7 @@ form {
   padding: 1%;
   margin-top: 10vh;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   align-items: center;
   justify-content: space-between;
@@ -264,13 +268,13 @@ form {
 
 .rating > div {
   color: black;
-  font-size: 13px;
+  font-size: 17px;
   margin-top: 5px;
 }
 
 .ratings {
   display: flex;
-  font-size: 35px;
+  font-size: 39px;
   gap: 15px;
   padding: 5px;
   margin-top: 20px;
@@ -291,7 +295,7 @@ form {
   width: fit-content;
   color: white;
   gap: 10px;
-  font-size: 13px;
+  font-size: 17px;
   padding: 3px;
 }
 
@@ -383,7 +387,7 @@ form {
 
   p {
     width: 92%;
-    font-size: 17px;
+    font-size: 21px;
   }
 
   .emoji_img {
@@ -397,7 +401,7 @@ form {
 
   .box {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     padding: 6%;
   }
 }
