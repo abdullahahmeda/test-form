@@ -23,52 +23,52 @@ const answers = [
 
 const causes_answers = [
   {
-    q1: `Because you can find this information directly while reading the conversation .`
+    q1: `Because you can find this information directly while reading the conversation.`
   },
   {
-    q2: `Because you can recognize while reading text, that " Feeling sorry" means not being happy about something happened. It is the only word in the text that suits the meaning of the verb "regret" It is mentioned directly in conversation`
+    q2: `Because you can recognize while reading text, that "Feeling sorry" means not being happy about something happened. It is the only word in the text that suits the meaning of the verb "regret" It is mentioned directly in conversation.`
   },
   {
-    q3: `Because you can recognize directly while reading conversation, that Faisal said " My parents". Then, he used the pronoun "they" to refer to "his parents" when talking about them again.`
+    q3: `Because you can recognize directly while reading conversation, that Faisal said "My parents". Then, he used the pronoun "they" to refer to "his parents" when talking about them again.`
   },
   {
-    q4: `Because you can recognize directly while reading conversation that Faisal said " I missed "good opportunities" and Ibrahim answered him that life full of "chances" . This means they are connected. So, "good chance" has similar meaning to " opportunity" .`
+    q4: `Because you can recognize directly while reading conversation that Faisal said "I missed "good opportunities" and Ibrahim answered him that life full of "chances". This means they are connected. So, "good chance" has similar meaning to "opportunity".`
   },
   {
-    q5: `Because when you think while reading the whole conversation, you will find that this answer talks about the conversation's idea in general, not about specific parts of it. It covers all the conversation' ideas .`
+    q5: `Because when you think while reading the whole conversation, you will find that this answer talks about the conversation's idea in general, not about specific parts of it. It covers all the conversation's ideas.`
   },
   {
-    q6: `Because when you think while reading the conversation, Ibrahim said " my mind set on a carrier”. the mind used for thinking. So, you can guess that the meaning of this phrase is taking decisions and deciding.`
+    q6: `Because when you think while reading the conversation, Ibrahim said "my mind set on a carrier”. the mind used for thinking. So, you can guess that the meaning of this phrase is taking decisions and deciding.`
   },
   {
-    q7: `Because at the beginning of conversation Faisal asked Ibrahim if he wants to order something and Ibrahim said he liked their coffee . So, you can guess they are in a coffee shop.`
+    q7: `Because at the beginning of conversation Faisal asked Ibrahim if he wants to order something and Ibrahim said he liked their coffee. So, you can guess they are in a coffee shop.`
   },
   {
-    q8: `Because Faisal mentioned that in the conversation . He was sorry for losing lots of chances because he was immature ; means not thinking well. He didn't listen to his parents, maybe because he was young. The other choices not related to the conversation.`
+    q8: `Because Faisal mentioned that in the conversation . He was sorry for losing lots of chances because he was immature; means not thinking well. He didn't listen to his parents, maybe because he was young. The other choices not related to the conversation.`
   },
   {
-    q9: `Because the conversation talks about all the choices. Faisal and Ibrahim talked about college, job, business course , but never mention " bad grades"`
+    q9: `Because the conversation talks about all the choices. Faisal and Ibrahim talked about college, job, business course, but never mention "bad grades".`
   },
   {
-    q10: `Because the phrase starts with " I guess" . It's not truth. It is only what Ibrahim thinks.`
+    q10: `Because the phrase starts with "I guess". It's not the truth/ not a fact. It is only what Ibrahim thinks.`
   },
   {
-    q11: `Because Ibrahim told Faisal that there's still chance and he still can go to school. Going to school is always good. It can't be something wrong, stupid, crazy. So, " right" is the best choice.`
+    q11: `Because Ibrahim told Faisal that there's still chance and he still can go to school. Going to school is always good. It can't be something wrong, stupid, crazy. So, "right" is the best choice.`
   },
   {
     q12: `Because while reading the conversation. you can understand that it says if you lost an opportunity, you should be positive, try again, and make new opportunities. It refers to true and wrong behaviours.`
   },
   {
-    q13: `Because this is an idiom that has certain meaning. this phrase mean to work and have more money or a better social position. So, it doesn't mean the direct meaning of the verb " go out" .`
+    q13: `Because this is an idiom that has certain meaning. this phrase mean to work and have more money or a better social position. So, it doesn't mean the direct meaning of the verb "go out".`
   },
   {
-    q14: `Because "probably" means something not certain, not sure. so, we put it with the words that have similar meanings. While the other groups don't suit the meaning of " probably"`
+    q14: `Because "probably" means something not certain, not sure. so, we put it with the words that have similar meanings. While the other groups don't suit the meaning of "probably".`
   },
   {
-    q15: `Because while reading the conversation you can recognize the character of Ibrahim from his words. Ibrahim encourages Faisal and said to him " still there are chances". So, you can understand that he has good attitude about life, which is something good and positive .`
+    q15: `Because while reading the conversation you can recognize the character of Ibrahim from his words. Ibrahim encourages Faisal and said to him "still there are chances". So, you can understand that he has good attitude about life, which is something good and positive.`
   },
   {
-    q16: `Because while reading the conversation, you can understand that the idea that represents the whole conversation is " It's never too late to do things you wish". While the other choices are talking about parts of conversatin only.`
+    q16: `Because while reading the conversation, you can understand that the idea that represents the whole conversation is "It's never too late to do things you wish". While the other choices are talking about parts of conversatin only.`
   },
   {
     q17: `Because in many parts of the conversation there is a wish or regret for example: Faisal said "I wish I’d taken a course in business management" and at the beginning of conversation both Faisal and Ibrahim said they regret things. So, this title is suitable for the conversation.`
@@ -77,10 +77,10 @@ const causes_answers = [
     q18: `Because when we start making new opportunities, we make ourselves busy and positive. So, this can help us to save our time and reduce feeling sorry about missed chances.`
   },
   {
-    q19: `Because taking business management course, means Faisal will learn how to do the work. So, you can predict/ guess that Faisal can do the work himself and doesn't need to employ someone else to do the work.`
+    q19: `Because taking business management course, means Faisal will learn how to do the work. So, you can predict/guess that Faisal can do the work himself and doesn't need to employ someone else to do the work.`
   },
   {
-    q20: `Because from reading the whole conversation, you can understand and come out with the result that says: " As long as you still alive, It's never too late to do what you wish".`
+    q20: `Because from reading the whole conversation, you can understand and come out with the result that says: "As long as you still alive, It's never too late to do what you wish".`
   }
 ]
 
@@ -447,7 +447,7 @@ answers_array.forEach(ele => {
                         <div style="flex:1"><img class="emoji_img" style="object-fit:contain;" src="${getRandomWord(
                           wrong_imgs
                         )}" alt=""></div>
-                        <div class="wrong" style="flex:2"> ${wrong_word}  <span class="blue">"${right_ans}"</span> <br style="content: '';"> <div style="margin-top:10px">${cause_answer}</div> </div>`
+                        <div class="wrong" style="flex:2"> ${wrong_word}  <span class="blue">"${right_ans.trim()}"</span> <br style="content: '';"> <div style="margin-top:10px">${cause_answer}</div> </div>`
 
             document.getElementById(ele.dataset.q + '_rating').style.display =
               'flex'

@@ -375,7 +375,7 @@ answers_array.forEach(ele => {
                         <div style="flex:1"><img class="emoji_img" style="object-fit:contain;" src="${getRandomWord(
                           wrong_imgs
                         )}" alt=""></div>
-                        <div class="wrong" style="flex:2">${wrong_word}  <span class="blue">"${right_ans}"</span> </div>`
+                        <div class="wrong" style="flex:2">${wrong_word}  <span class="blue">"${right_ans.trim()}"</span> </div>`
 
             document.getElementById(ele.dataset.q + '_rating').style.display =
               'flex'

@@ -28,19 +28,19 @@ const causes_answers = [
   },
   {
     q2:
-      'Because you can recognize while reading text, that " keep away" is the only verb in the text that suits the meaning of the verb "avoid" It is mentioned directly in paragrah 2.'
+      'Because you can recognize while reading text, that "keep away" is the only verb in the text that suits the meaning of the verb "avoid" It is mentioned directly in paragrah 2.'
   },
   {
     q3:
-      'Because you can recognize directly while reading paragraph 2, that the word " worry" is mentioned in the previous phrase. Then, the text use the pronoun "it" to refer to "worry" when talking about it again.'
+      'Because you can recognize directly while reading paragraph 2, that the word "worry" is mentioned in the previous phrase. Then, the text use the pronoun "it" to refer to "worry" when talking about it again.'
   },
   {
     q4:
-      'Because you can recognize directly while reading paragraph 3 that text mentioned " Anxeity and stress" together. This means they are connected. So, Anxeity" has similar meaning to " stress" .'
+      'Because you can recognize directly while reading paragraph 3 that text mentioned "Anxeity and stress" together. This means they are connected. So, "Anxeity" has similar meaning to "stress".'
   },
   {
     q5:
-      "Because when you think while reading the whole text, you will find that this answer talks about the text 's idea in general, not about a specific paragraph. It covers all the paragraphs' ideas."
+      "Because when you think while reading the whole text, you will find that this answer talks about the text's idea in general, not about a specific paragraph. It covers all the paragraphs' ideas."
   },
   {
     q6:
@@ -52,11 +52,11 @@ const causes_answers = [
   },
   {
     q8:
-      'Because when you think of the text . It says that thinking too much and worry are not good things. So, they will not cause something good like relaxing, good heath and life.'
+      'Because when you think of the text. It says that thinking too much and worry are not good things. So, they will not cause something good like relaxing, good heath and life.'
   },
   {
     q9:
-      'Because the text talks about all the choices as tips for dealing with stress, but never mention " travel more" .'
+      'Because the text talks about all the choices as tips for dealing with stress, but never mention "travel more".'
   },
   {
     q10:
@@ -64,7 +64,7 @@ const causes_answers = [
   },
   {
     q11:
-      'Because in paragragh 5 , these words mentioned as the symptoms of stress. So, the person who has stress, called "stressful person". He is not happy, healthy nor organized person.'
+      'Because in paragragh 5, these words mentioned as the symptoms of stress. So, the person who has stress, called "stressful person". He is not happy, healthy nor organized person.'
   },
   {
     q12:
@@ -72,17 +72,17 @@ const causes_answers = [
   },
   {
     q13:
-      'Because this phrase is mentioned in paragragh 4. The verb "greet"means saying "Hi "to other people, but here it says "greet the day" . You can guess, It means be happy and positive.'
+      'Because this phrase is mentioned in paragragh 4. The verb "greet" means saying "Hi" to other people, but here it says "greet the day". You can guess, It means be happy and positive.'
   },
   {
     q14:
       'Because "positive" mentioned many times in the text as a good thing. Also, good things give happiness. So, you can put it in the group words that has good meanings.'
   },
   {
-    q15: `Because while reading paragrapgh 4, you can recognize the fact that " stress lowered body resistance to diseases" and this is not good, great, happy , or nice fact. It's a sad fact.`
+    q15: `Because while reading paragrapgh 4, you can recognize the fact that "stress lowered body resistance to diseases" and this is not good, great, happy, or nice fact. It's a sad fact.`
   },
   {
-    q16: `Because while reading the whole text , you can recognize that each paragraph gives one tip to control stress. But if we want only one sentence that represents the text. It will be that we should control our response to stress. You can find it in paragraph 1.`
+    q16: `Because while reading the whole text, you can recognize that each paragraph gives one tip to control stress. But if we want only one sentence that represents the text. It will be that we should control our response to stress. You can find it in paragraph 1.`
   },
   {
     q17: `Because each paragraph has one idea and the good title of the passage should be general and cover all the ideas in the paragraphs`
@@ -91,7 +91,7 @@ const causes_answers = [
     q18: `Because when we teach people about the diseases that stress can cause and give them tips for controlling it, this can help them to reduce it.`
   },
   {
-    q19: `Because controlling stress is good for health, you can predict/ guess that a person who controls his stress will eat and sleep well.`
+    q19: `Because controlling stress is good for health, you can predict/guess that a person who controls his stress will eat and sleep well.`
   },
   {
     q20: `Because from reading the whole text, you can come out with the result that says: stress is not good for health.`
@@ -461,7 +461,7 @@ answers_array.forEach(ele => {
                         <div style="flex:1"><img class="emoji_img" style="object-fit:contain;" src="${getRandomWord(
                           wrong_imgs
                         )}" alt=""></div>
-                        <div class="wrong" style="flex:2"> ${wrong_word}  <span class="blue">"${right_ans}"</span> <br style="content: '';"> <div style="margin-top:10px">${cause_answer}</div> </div>`
+                        <div class="wrong" style="flex:2"> ${wrong_word}  <span class="blue">"${right_ans.trim()}"</span> <br style="content: '';"> <div style="margin-top:10px">${cause_answer}</div> </div>`
 
             document.getElementById(ele.dataset.q + '_rating').style.display =
               'flex'
