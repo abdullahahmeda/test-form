@@ -1,6 +1,6 @@
 :root {
   --bg-color: #f3f3fd;
-  --primary-color: #2d69fe;
+  --primary-color: #24528f;
   --secondary-color: #e5e7f3;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #0e43ca;
+  background-color: #13386a;
 }
 
 .btn-secondary {
@@ -89,4 +89,8 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
 }
